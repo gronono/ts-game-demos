@@ -21,6 +21,7 @@ export class Area implements Entity {
     }
 
     collides(other: Entity, side: Side): void {
+        console.log(this, "collides with ", other, side);
     }
     
 }

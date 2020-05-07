@@ -32,7 +32,7 @@ export class Ball implements Entity {
     }
     
     collides(other: Entity, side: Side): void {
-        console.log("collides with ", other, side);
+        console.log(this, "collides with ", other, side);
         if (other instanceof Area) {
             if (side == Side.RIGHT || side == Side.LEFT) {
                 this._velocity.x = this._velocity.x * -1;
